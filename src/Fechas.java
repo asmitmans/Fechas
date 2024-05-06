@@ -18,26 +18,33 @@ public class Fechas {
 
         if (year1 < year2) {
             System.out.println("persona 1 es mayor");
+            return;
         } else if (year2 < year1) {
             System.out.println("persona 2 es mayor");
+            return;
         }
 
         // Same year =>
         if (month1 < month2) {
             System.out.println("persona 1 es mayor");
+            return;
         } else if (month2 < month1) {
             System.out.println("persona 2 es mayor");
+            return;
         }
 
         // Same year and month =>
         if (day1 < day2) {
             System.out.println("persona 1 es mayor");
+            return;
         } else if (day2 < day1) {
             System.out.println("persona 2 es mayor");
+            return;
         }
 
         // Same date
         System.out.println("Tienen la misma edad");
+        return;
 
     }
 }
